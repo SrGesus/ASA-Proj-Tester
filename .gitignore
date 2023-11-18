@@ -1,3 +1,7 @@
 config.txt
 *target
 shell.nix
+.cargo_home
+*.diff
+*.outhyp
+failed_tests.txt
