@@ -11,7 +11,7 @@ ifeq ($(patsubst %.cpp,,$(SOURCE)),)
 TARGET 		:= ./target
 COMMAND 	:= $(TARGET)
 $(TARGET): $(SOURCE)
-	g++ -std=c++11 -O3 -Wall file.cpp $< -o $@ -lm
+	g++ -std=c++11 -O3 -Wall $< -o $@ -lm
 endif
 ifeq ($(patsubst %.rs,,$(SOURCE)),)
 TARGET 		:= ./target
