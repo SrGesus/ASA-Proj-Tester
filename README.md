@@ -1,6 +1,10 @@
 # ASA-Proj-Tester
 Unit tests for Algorithm Analysis and Synthesis projects.
 
+## Tests
+
+Description of each test:
+* [Project 1](tests/proj1/)
 
 ## Dependencies
 
@@ -15,25 +19,16 @@ brew install diffutils
 ## How to run
 Clone the repo
 ```bash
-git clone https://github.com/SrGesus/PO-2023-TESTS
+git clone https://github.com/SrGesus/ASA-Proj-Tester
 ```
-Provide the file [config](config) with the necessary paths to the folder po-uilib is in and your project folder.
+Provide the file [config.txt](config.txt) with the path to your source code.
 
 Followed by
 ```bash
 make
 ```
-You can run a single or a group of tests. But you should run make clean first. E.g:
-Running only the professor's tests
+You can also run a specific test or a group of tests. But you should run make clean first. E.g:
 ```bash
-make clean tests/professor/*.in
-```
-Running one test:
-```bash
-make clean tests/Gesus/0-ADDRESS.in
-```
-Running a few tests:
-```bash
-make clean tests/Branquinho/test47.in tests/Gesus/0-ADDRESS.in
+make clean tests/proj1/A.in tests/proj1/B.in
 ```
 You can then check out the respective output, on the same folder with the extension `.outhyp` and the diff `.diff`.
