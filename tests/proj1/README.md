@@ -1,5 +1,5 @@
 # Test Description
 
-* Test A -
-* Test B -
+* Test A - Original
+* Test B - Original
 * Test C - No available pieces
