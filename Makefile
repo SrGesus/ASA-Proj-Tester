@@ -55,7 +55,7 @@ all: clean_tests $(TARGET) $(TESTS)
 
 # Compare test results
 tests/%.in: force tests/%.out
-	@$(COMMAND) < tests/$*.in > tests/$*.outhyp
+	@-$(COMMAND) < tests/$*.in > tests/$*.outhyp
 	@-if (diff -iw -B --color tests/$*.outhyp tests/$*.out) > /dev/null; \
 	then \
 		printf "$* $(ccgreen)PASSED$(ccend).\n"; \
