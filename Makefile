@@ -67,17 +67,12 @@ tests/%.in: force tests/%.out
 	fi
 	@echo
 
-tests/%.out:
-	$(error $@ is missing. Please create it.)
-
 clean: clean_tests
 	@$(RM) target
 
 clean_tests:
-	@$(RM) tests/*/*.outhyp
-	@$(RM) tests/*.outhyp
-	@$(RM) tests/*/*.diff
-	@$(RM) tests/*.diff
+	@$(RM) $$(find tests -type f -name '*.diff')
+	@$(RM) $$(find tests -type f -name '*.outhyp')
 	@$(RM) failed_tests.txt
 
 
