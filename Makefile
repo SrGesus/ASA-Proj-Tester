@@ -35,7 +35,7 @@ ccred 		:= \033[0;31m\033[1m
 ccgreen 	:= \033[0;32m\033[1m
 ccend		:= \033[0m
 
-TEST_FOLDER := tests/proj1
+TEST_FOLDER := tests/proj2
 TESTS		:= $(sort $(shell find $(TEST_FOLDER) -type f -name '*.in'))
 TESTS_NUM 	 = $(shell find $(TEST_FOLDER) -type f -name '*.in' | wc -l)
 TESTS_FAIL 	 = $$(find $(TEST_FOLDER) -type f -name '*.diff' | wc -l)
